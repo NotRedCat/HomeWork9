@@ -34,7 +34,6 @@ public class FileParseTest {
         File zipFile = new File(zipUrl.toURI());
         ZipFile zip = new ZipFile(zipFile);
         return zip.getInputStream(zip.getEntry(fileName));
-
     }
 
     @Test
@@ -44,6 +43,7 @@ public class FileParseTest {
              assertThat(xls.excel
                      .getSheetAt(0).getRow(1).getCell(0).getStringCellValue())
                      .isEqualTo("Вагон");
+             closeStream(xlsFileStream);
          }
      }
 
@@ -52,7 +52,9 @@ public class FileParseTest {
          try (InputStream pdfFileStream = getZipFile(zipFileName,pdfFileName)) {
              PDF pdf = new PDF(pdfFileStream);
              assertThat(pdf.text).contains("Тестовые данные для занятия по работе с файлами");
+             closeStream(pdfFileStream);
          }
+
      }
 
      @Test
@@ -64,7 +66,9 @@ public class FileParseTest {
                      new String[]{"Вагон;6543665;ЭХ646336;10.09.2022"},
                      new String[]{"Контейнер;RZDU6578643;ОТ909654;22.09.2022"},
                      new String[]{"Авто;АА456А33;567;13.09.2022"});
+             closeStream(csvFileStream);
          }
+
      }
 /*
    @Test
@@ -105,7 +109,7 @@ public class FileParseTest {
         assertThat(car.number).isEqualTo("AA345A70");
 
     }
-    private void closeInputStream (InputStream file) throws IOException {
+    private void closeStream (InputStream file) throws IOException {
         if(file !=null)
             file.close();
     }
