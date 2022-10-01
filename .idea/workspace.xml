@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce2d7fd-130f-4ef1-8971-25f177d2fb5c" name="Changes" comment="add closing InputStream" />
+    <list default="true" id="3ce2d7fd-130f-4ef1-8971-25f177d2fb5c" name="Changes" comment="change workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +43,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -190,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664627765631</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change workspace.xml">
+      <created>1664630322757</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664630322757</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +221,7 @@
     <MESSAGE value="Create project and update .gitiqnore" />
     <MESSAGE value="HomeWork9" />
     <MESSAGE value="add closing InputStream" />
-    <option name="LAST_COMMIT_MESSAGE" value="add closing InputStream" />
+    <MESSAGE value="change workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="change workspace.xml" />
   </component>
 </project>
