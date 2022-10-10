@@ -1,7 +1,7 @@
 {
   "model": "Toyota",
   "year": "2012",
-  "automatic_transmission": true,
-  "engine_capacity": 2.0,
+  "automaticTransmission": true,
+  "engineCapacity": 2.0,
     "number" : "AA345A70"
   }
